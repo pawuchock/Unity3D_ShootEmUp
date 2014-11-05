@@ -17,12 +17,12 @@ public class PlayerMovementNshooting : MonoBehaviour
 				if (Health < 0) {
 						Application.Quit ();
 				}
-		//transform.Translate (Input.acceleration.x, 0, 0);
-
-				float delta = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
-		
-				transform.position += new Vector3 (delta, 0.0f);
-		
+		transform.Translate (Input.acceleration.x, 0, 0);
+//
+//				float delta = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
+//		
+//				transform.position += new Vector3 (delta, 0.0f);
+//		
 				if (transform.position.x < minX) {
 						transform.position = new Vector3 (minX, transform.position.y, transform.position.z);
 				} else if (transform.position.x > maxX) {

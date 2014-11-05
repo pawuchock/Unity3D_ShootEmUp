@@ -16,6 +16,7 @@ public class PlayerShooting : MonoBehaviour {
 				if (Random.Range (1, 15) == 3) {
 					Instantiate (laser, transform.position, Quaternion.identity);
 				} else {
+				audio.Play();
 					Instantiate (bullet, transform.position, Quaternion.identity);
 				}
 			}

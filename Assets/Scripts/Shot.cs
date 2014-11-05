@@ -8,7 +8,7 @@ public class Shot : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		rigidbody2D.velocity = new Vector2(0.0f, speed);
-		if (transform.position.y > 8)
+		if (transform.position.y > 22)
 			Destroy (gameObject);
 
 	}
